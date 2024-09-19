@@ -21,4 +21,9 @@ export default {
   LOG_CONFIG: {
     level: 'DEBUG',
   },
+  REDIS_CONFIG: {
+    host: 'localhost',
+    port: 6379,
+    enableAuth: false,
+  },
 };

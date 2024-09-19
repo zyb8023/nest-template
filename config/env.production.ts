@@ -19,4 +19,9 @@ export default {
   LOG_CONFIG: {
     level: 'INFO',
   },
+  REDIS_CONFIG: {
+    host: 'localhost',
+    port: 6379,
+    enableAuth: false,
+  },
 };

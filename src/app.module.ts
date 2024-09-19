@@ -9,6 +9,7 @@ import { APP_FILTER, APP_INTERCEPTOR } from '@nestjs/core';
 import { TransformInterceptor } from './common/interceptor/transform/transform.interceptor';
 import { HttpExceptionFilter } from './common/filter/http-exception/http-exception.filter';
 import { AllExceptionsFilter } from './common/filter/any-exception/any-exception.filter';
+import { RedisModule } from './share/redis/redis.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { AllExceptionsFilter } from './common/filter/any-exception/any-exception
     DatabaseModule,
     LogModule,
     UserModule,
+    RedisModule,
   ],
   // app.module中导入全局拦截器可以导入依赖
   providers: [
